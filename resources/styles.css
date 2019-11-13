@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: Sans-Seriff, Helvetica;
+    color: #fff;
+    background-color: #7f7fff;
+  }
+  section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  select {
+    margin-bottom: 1vw;
+  }
+  
+  #title {
+    padding: 10px 0 10px 0;
+    margin-bottom: 30px;
+    background-color: #2460A7FF;
+  }
+  
+  #rule {
+    margin-bottom: 30px;
+  }
+  
+  #seconds {
+    color: yellow;
+  }
+  
+  #wurd {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  input {
+    width: 400px;
+    font-size: 15px;
+    padding: 5px 0 5px 5px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  #msg {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  #board {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #instruct {
+    width: 400px;
+    padding: 20px 10px;
+    background-color:#2460A7FF;
+  }

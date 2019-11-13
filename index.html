@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/styles.css" type="text/css">
+  <title>TypeTest</title>
+</head>
+<body>
+    <section id="title">
+        <h1>TypeTest</h1>
+      </section>
+      <section>
+        <select id='lvl'>
+          <option value="5">Easy</option>
+          <option value="3">Medium</option>
+          <option value="2">Hard</option>
+        </select>
+        <p id="rule">Type the given word in <span id="seconds">5</span> seconds</p>
+        <h1 id="wurd">Word to type</h1>
+        <input id="uinput" type="text" placeholder="Start typing..." autofocus>
+        <p id="msg"></p>
+        <div id="board">
+          <p id="timeleft">Time left: 0</p>
+          <p id="score">Score: 0</p>
+        </div>
+        <div id="instruct">
+          <h3><strong>Insctructions</strong></h3>
+          <p>Enter the word as fast as you can.<br>At game over enter the word to start a new game</p>
+        </div>
+      </section>
+  
+      <script src="resources/app.js"></script>
+</body>
+</html>
