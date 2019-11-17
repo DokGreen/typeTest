@@ -4,6 +4,8 @@ window.addEventListener('load', init);
 let time = 6;
 let score = 0;
 let isPlaying;
+let highScore;
+const hSSave = 'highscore';
 
 //DOM var
 const wordInput = document.querySelector('#uinput');
@@ -14,6 +16,7 @@ const seconds = document.querySelector('#seconds');
 const message = document.querySelector('#msg');
 const startTime = document.querySelector('#seconds');
 const lvl = document.querySelector('#lvl');
+const displayHS = document.querySelector('#highScore');
 
 //Words array
 const words = [
@@ -41,6 +44,15 @@ const words = [
 
 //start the game
 function init() {
+  // get the highscore
+  let scoreStr = localStorage.getItem(hSSave);
+  if ( scoreStr == undefined) {
+    highScore = 0;
+  } else {
+    highScore = parseInt(scoreStr);
+  }
+
+  displayHS.innerHTML = 'Highscore: ' + highScore;
   //call the word selector
   showWords(words);
   //check player input
@@ -66,9 +78,18 @@ function startMatch() {
     wordInput.style.border = 'none';
     score++;
 
+        //check highscore
+    if (score > highScore) {
+      highScore = score
+      localStorage.setItem(hSSave, highScore);
+    } else {
+      highScore = highScore;
+    }
+
     console.log(time);
   }
   scoreDisplay.innerHTML = 'Score: ' + score;
+  displayHS.innerHTML = 'Highscore: ' + highScore;
 }
 
 //match the word
