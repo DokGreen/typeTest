@@ -19,6 +19,11 @@
 
   select {
     margin-bottom: 1vw;
+    padding: 1vw;
+    font-size: 2.5vw;
+    color: #fff;
+    border: none;
+    background-color: #2460A7FF;
   }
   
   #title {
